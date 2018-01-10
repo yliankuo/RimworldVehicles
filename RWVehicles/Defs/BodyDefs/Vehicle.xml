@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+	Each coverage value is relative to its parent.
+	Remaining body part coverage (100% minus coverage of all child nodes) is a chance to hit exactly this part.
+	Damage "starts" at corePart, and then "goes deeper" until it hits remaining body part coverage or leaf node - this body part is then hit.
+-->
+
+<Defs>
+	
+	<BodyDef>
+		<defName>RE_Vehicle</defName>
+		<label>vehicle</label>
+		<corePart>
+			<def>Chassis</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+            <groups>
+                <li>HeadAttackTool</li>
+            </groups>
+			<parts>
+				<li>
+					<def>Hull</def>
+					<coverage>0.4</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>Frame</def>
+					<coverage>0.2</coverage>
+					<depth>Inside</depth>
+				</li>
+                <li>
+                    <def>Engine</def>
+                    <coverage>0.1</coverage>
+                    <depth>Inside</depth>
+                </li>
+                        
+				<li>
+					<def>Axle</def>
+					<coverage>0.08</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>Wheel</def>
+							<coverage>0.2</coverage>
+							<depth>Outside</depth>
+						</li>
+						<li>
+							<def>WheelSystem</def>
+							<coverage>0.1</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Axle</def>
+					<coverage>0.08</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>Wheel</def>
+							<coverage>0.2</coverage>
+							<depth>Outside</depth>
+						</li>
+						<li>
+							<def>WheelSystem</def>
+							<coverage>0.1</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

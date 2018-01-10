@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+	<tags>
+		<li>Manipulation_way1</li>
+	</tags>
+	
+	means that this body part is responsible for Manipulation activity in group "way1".
+	Efficiency of Pawn activity X is minimum of all X activity groups efficiency values.
+	X activity group efficiency is average value of all body parts efficiency values responsible for this activity in this group.
+	
+	So if there are body parts responsible for (1)Manipulation_foo, (2)Manipulation_foo, (1)Manipulation_bar, (2)Manipulation_bar
+	then Manipulation efficiency is min(avg((1)Manipulation_foo, (2)Manipulation_foo), avg((1)Manipulation_bar, (2)Manipulation_bar))
+-->
+
+<Defs>
+
+	<!--VehicleChassis====================================================================-->
+	<BodyPartDef>
+		<defName>Chassis</defName>
+		<label>vehicle chassis</label>
+		<hitPoints>100</hitPoints>
+		<oldInjuryBaseChance>0</oldInjuryBaseChance>
+		<skinCovered>false</skinCovered>
+		<isSolid>true</isSolid>
+		<isAlive>false</isAlive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Hull</defName>
+		<label>hull</label>
+		<hitPoints>80</hitPoints>
+		<oldInjuryBaseChance>0</oldInjuryBaseChance>
+		<skinCovered>false</skinCovered>
+		<isSolid>true</isSolid>
+		<isAlive>false</isAlive>
+	</BodyPartDef>
+    
+    <BodyPartDef>
+        <defName>Engine</defName>
+        <label>engine</label>
+        <hitPoints>40</hitPoints>
+        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <oldInjuryBaseChance>0</oldInjuryBaseChance>
+        <skinCovered>true</skinCovered>
+        <isSolid>true</isSolid>
+        <isAlive>false</isAlive>
+        <tags>
+            <li>BloodPumpingSource</li>
+            <li>BloodFiltrationKidney</li>
+            <li>MetabolismSource</li>
+            <li>BreathingSource</li>
+        </tags>
+    </BodyPartDef>
+    
+	<BodyPartDef>
+		<defName>Frame</defName>
+		<label>frame</label>
+		<hitPoints>60</hitPoints>
+		<oldInjuryBaseChance>0</oldInjuryBaseChance>
+        <frostbiteVulnerability>1</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<isSolid>true</isSolid>
+		<isAlive>false</isAlive>
+        <tags>
+            <li>ConsciousnessSource</li>
+            <li>SightSource</li>
+            <li>HearingSource</li>
+        </tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Wheel</defName>
+		<label>right track</label>
+		<hitPoints>80</hitPoints>
+		<oldInjuryBaseChance>0</oldInjuryBaseChance>
+		<skinCovered>false</skinCovered>
+		<isSolid>true</isSolid>
+		<isAlive>false</isAlive>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Axle</defName>
+		<label>axle</label>
+		<hitPoints>60</hitPoints>
+		<oldInjuryBaseChance>0</oldInjuryBaseChance>
+		<skinCovered>false</skinCovered>
+		<isSolid>true</isSolid>
+		<isAlive>false</isAlive>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>WheelSystem</defName>
+		<label>wheel system</label>
+		<hitPoints>60</hitPoints>
+		<oldInjuryBaseChance>0</oldInjuryBaseChance>
+		<skinCovered>false</skinCovered>
+		<isSolid>true</isSolid>
+		<isAlive>false</isAlive>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>

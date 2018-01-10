@@ -1,0 +1,7 @@
+/Users/iankuo/Projects/RWVehicles/RWVehicles/bin/Debug/RWVehicles.dll
+/Users/iankuo/Projects/RWVehicles/RWVehicles/bin/Debug/RWVehicles.pdb
+/Users/iankuo/Projects/RWVehicles/RWVehicles/bin/Debug/0Harmony.dll
+/Users/iankuo/Projects/RWVehicles/RWVehicles/obj/Debug/RWVehicles.csprojResolveAssemblyReference.cache
+/Users/iankuo/Projects/RWVehicles/RWVehicles/obj/Debug/RWVehicles.csproj.CoreCompileInputs.cache
+/Users/iankuo/Projects/RWVehicles/RWVehicles/obj/Debug/RWVehicles.dll
+/Users/iankuo/Projects/RWVehicles/RWVehicles/obj/Debug/RWVehicles.pdb

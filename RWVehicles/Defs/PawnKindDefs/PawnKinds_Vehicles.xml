@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<PawnKindDef>
+    <defName>RMVWagon_Vehicle</defName>
+    <label>wagon</label>
+    <race>RWV_BaseWagon</race>
+    <canArriveManhunter>false</canArriveManhunter>
+    <combatPower>0</combatPower>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+        <li>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Vehicle/Trips/Trips</texPath>
+                <drawSize>5</drawSize>
+                <shadowData>
+                    <volume>(0.3, 0.3, 0.3)</volume>
+                </shadowData>
+            </bodyGraphicData>
+        </li>
+    </lifeStages>
+</PawnKindDef>
+
+</Defs>

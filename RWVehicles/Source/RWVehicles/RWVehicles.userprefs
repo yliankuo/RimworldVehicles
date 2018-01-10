@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="RWVehicles/CompProperties_PawnPuller.cs">
+    <Files>
+      <File FileName="RWVehicles/VehicleSpawner.cs" Line="17" Column="5" />
+      <File FileName="RWVehicles/RWVExtensionUtility.cs" Line="8" Column="48" />
+      <File FileName="RWVehicles/RWVProperties.cs" Line="4" Column="21" />
+      <File FileName="RWVehicles/CompPawnPuller.cs" Line="8" Column="32" />
+      <File FileName="RWVehicles/CompProperties_PawnPuller.cs" Line="2" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 3.12.1 (b7764aa)" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RecipeDef Abstract="True" Name="VehicleRecipeBase">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workAmount>100</workAmount>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<skillRequirements>
+            <Crafting>4</Crafting>
+		</skillRequirements>
+		<jobString>Building Vehicle.</jobString>
+		<recipeUsers><li>TableMachining</li></recipeUsers>
+	</RecipeDef>
+    
+	<RecipeDef ParentName="VehicleRecipeBase">
+		<defName>WagonRecipe</defName>
+		<label>make wagon</label>
+		<description>Produce a wagon capable of carrying goods across long distances</description>
+		<workAmount>2000</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+		<researchPrerequisite>Machining</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Component</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WagonSpawner>1</WagonSpawner>
+        </products>
+	</RecipeDef>
+</Defs>

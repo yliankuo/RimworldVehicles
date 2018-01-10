@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName = "ResourceBase">
+		<defName>WagonSpawner</defName>
+<!--        <thingClass>RWVehicles.VehicleSpawner</thingClass>-->
+		<label>Wagon Spawner</label>
+		<description>A collection of parts used to build a wagon.</description>
+		<graphicData>
+			<texPath>Things/Item/Minified/CrateFront</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompVehicle.CompProperties_VehicleSpawner">
+<!--                <useVerb>Assemble {0}</useVerb>-->
+                <vehicleToSpawn>RMVWagon_Vehicle</vehicleToSpawn>
+                <assemblyTime>20.0</assemblyTime>
+                <workEffect>ConstructMetal</workEffect>
+            </li>
+        </comps>
+        <drawGUIOverlay>false</drawGUIOverlay>
+	</ThingDef>
+</Defs>
